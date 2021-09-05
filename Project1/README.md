@@ -52,8 +52,11 @@ Follow these steps to create a git server capable of storing your projects acros
 Once that's all setup you're good to use your server. These commands will be useful for you to know in the future:
 
 git clone - This command allows you to clone an existing repository
+
 git init - This command allows you to initialize a new git folder ( you used it during the tutorial )
+
 git commit - This command creates a new commit that includes a log message you define
+
 git push  - This command allows you to apply your changes to other branches of the project that you've defined. 
 
 
