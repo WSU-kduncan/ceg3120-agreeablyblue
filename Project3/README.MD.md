@@ -8,7 +8,7 @@
 
 4. A route table is a set of rules that determines where network traffic is sent (or routed). To create a route table I went to ***AWS -> Services -> VPC -> Route Tables.*** Once there I clicked Create route table to open the creation wizard which allowed me to name my subnet (RUBY-Subnet) and specify which VPC it was connected to (RUBY-VPC). Once done in the wizard I was able to right click on my newly created route table and select *Edit subnet associations* to associate this route table with my recently created subnet (RUBY-Subnet). After associating this route table with my subnet, I was able to associate it with the internet in general by navigating to ***Routes*** -> ***Edit routes*** and creating a route with the following attributes:
 
- **Destination:** 0.0.0/0
+ **Destination:** 0.0.0/0;
  **Target:** Internet Gateway / RUBY-gw
  
 5. A security group acts as the network firewall which either allows or prevents connection based on rules set by the system admin. To create mine I navigated to ***AWS -> Services -> VPC -> Security Groups.*** I then clicked *Create Security Group* giving my security group the name RUBY-sg and connecting it to my VPC via the VPC lookup text box. I then created two inbound rules, one which allows traffic from Wright State connections (130.108.0.0), and one that allows connections from my private home network. 
